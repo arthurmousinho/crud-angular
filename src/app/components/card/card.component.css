@@ -1,0 +1,24 @@
+.card {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    user-select: none;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    outline: 2px solid black;
+}
+
+.card strong {
+    font-size: 1.2rem;
+    width: 40%;
+}
