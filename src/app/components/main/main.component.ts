@@ -29,7 +29,7 @@ export class MainComponent {
 
   public carsArray: Car[] | undefined = [];
 
-  public async getAllCars() {
+  public getAllCars() {
     const response = this.apiService.getAll()
     response.subscribe((data) => {
       this.carsArray = data
@@ -50,7 +50,7 @@ export class MainComponent {
   public getById() {
 
     if (this.idInput.trim() == "") {
-      alert("Enter a valid ID input !!")
+      alert("Digite o ID para buscar")
       return;
     }
 
@@ -62,7 +62,7 @@ export class MainComponent {
 
   public addNewCar() {
     if (this.newCarNameInput.trim() === "" || this.newCarBrandInput.trim() === "") {
-      alert("Enter a valid Name or Brand")
+      alert("Os campos de NOME e MARCA são obrigatórios para adicionar")
       return;
     }
 
@@ -79,7 +79,7 @@ export class MainComponent {
 
   public updateCar() {
     if (this.updateCarNameInput.trim() === "" || this.updateCarBrandInput.trim() === "" || this.updateCarIdInput.trim() === "") {
-      alert("Fill the fields do update a Car")
+      alert("Preencha todos os campos para atulizar")
       return;
     }
 
@@ -93,9 +93,9 @@ export class MainComponent {
     this.getAllCars()
   }
 
-  public async deleteCar() {
+  public deleteCar() {
     if (this.deleteCarId.trim() === "") {
-      alert("ID field is blank")
+      alert("Campo de ID está vazio, tente novamente")
       return;
     }
     this.apiService.delete(this.deleteCarId).subscribe()
