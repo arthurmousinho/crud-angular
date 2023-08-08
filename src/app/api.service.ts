@@ -19,6 +19,7 @@ export class ApiService {
   public getById(id: string): Observable<Car> {
     return this.httpClient.get<Car>(`${API}/carros/${id}`)
   }
+  
 
   public post(newCar: Car): Observable<Car> {
     return this.httpClient.post<Car>(`${API}/carros`, newCar)

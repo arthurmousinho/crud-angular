@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { MainComponent } from './components/main/main.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    MainComponent
+    MainComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

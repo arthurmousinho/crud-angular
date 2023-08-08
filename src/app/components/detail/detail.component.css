@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    padding-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail {
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.detail div {
+    background-color: #efefef;
+    padding: 15px;
+    border-radius: 10px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -10,7 +10,9 @@ import { ApiService } from 'src/app/api.service';
 
 export class MainComponent {
 
-  constructor(private apiService: ApiService) {  }
+  constructor(private apiService: ApiService) { 
+    this.getAllCars()
+  }
 
   // get by id
   public idInput: string = "";
