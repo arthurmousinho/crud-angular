@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "name": "Carcel",
+      "name": "Corcel",
       "brand": "Ford"
     },
     {
@@ -29,11 +29,6 @@
       "id": 6,
       "brand": "Fiat",
       "name": "Uno Mille"
-    },
-    {
-      "id": 7,
-      "name": "Caravan",
-      "brand": "Chevrolet"
     }
   ]
 }
